@@ -11,7 +11,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.web.bind.annotation.GetMapping;
-
+//Comment
 public class AdminAPI {
 
 	
@@ -19,6 +19,7 @@ public class AdminAPI {
 	//=======================================Reservation change for admin()=========================================
 
 	@GetMapping("/FoodVibes/change")
+	
 	public String previousday(HttpServletRequest req)throws ClassNotFoundException,SQLException{
 		Class.forName("com.mysql.cj.jdbc.Driver");
 		Connection connect = DriverManager.getConnection("jdbc:mysql://localhost:3306/resturantProject","root","Mysql@1225");
